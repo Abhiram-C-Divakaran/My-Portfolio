@@ -92,12 +92,135 @@
         </div>
       </div>
 
-      <!-- RIGHT: Hero Video -->
-      <div class="hero-video-container" style="display: flex; justify-content: center; align-items: center; width: 100%; max-width: 500px; margin: 0 auto;">
-        <video autoplay loop muted playsinline style="width: 100%; max-width: 500px; mix-blend-mode: screen; pointer-events: none;">
-          <source src="Components/Images/with_no_backgorund_ (1).mp4" type="video/mp4">
-          Your browser does not support the video tag.
-        </video>       </div>
+      <!-- RIGHT: 3D Orbiting Tech Icons -->
+      <div class="hero-orbit-container">
+        <div class="orbit-glow"></div>
+        <div class="orbit-scene">
+          <!-- Central Icon -->
+          <div class="orbit-center">
+            <svg viewBox="0 0 512 512" width="56" height="56">
+              <circle cx="256" cy="256" r="36" fill="#61DAFB" />
+              <ellipse cx="256" cy="256" rx="200" ry="75" fill="none" stroke="#61DAFB" stroke-width="12"
+                opacity="0.9" />
+              <ellipse cx="256" cy="256" rx="200" ry="75" fill="none" stroke="#61DAFB" stroke-width="12" opacity="0.9"
+                transform="rotate(60 256 256)" />
+              <ellipse cx="256" cy="256" rx="200" ry="75" fill="none" stroke="#61DAFB" stroke-width="12" opacity="0.9"
+                transform="rotate(120 256 256)" />
+            </svg>
+          </div>
+
+          <!-- Orbit Ring 1 (Inner) -->
+          <div class="orbit-ring orbit-ring-1">
+            <!-- Icon 1: TypeScript -->
+            <div class="orbit-icon" style="--angle: 0deg; --delay: 0s;">
+              <div class="orbit-icon-inner">
+                <svg viewBox="0 0 128 128" width="32" height="32">
+                  <rect width="128" height="128" rx="15" fill="#3178C6" />
+                  <path
+                    d="M91.5 68.5v10.2h-13V105c0 3.5-.7 6-2 7.5s-3.5 2.2-6.5 2.2c-2.5 0-5-.8-7.3-2.3l3-8.5c1 .7 2 1 3 1 1.7 0 2.5-1.3 2.5-4V78.7H57.5V68.5zm13.7 0l.2 7.3-1.5-.2c-2.3 0-4.2.7-5.5 2.2-1.4 1.4-2.1 3.3-2.1 5.7V105h-9.5V68.5h8.7l.5 5.3c1-2 2.3-3.4 3.9-4.4 1.5-1 3.3-1.4 5.3-1.4"
+                    fill="#fff" />
+                </svg>
+              </div>
+            </div>
+            <!-- Icon 2: JS -->
+            <div class="orbit-icon" style="--angle: 90deg; --delay: -5s;">
+              <div class="orbit-icon-inner">
+                <svg viewBox="0 0 128 128" width="32" height="32">
+                  <path fill="#F0DB4F" d="M1 1h126v126H1z" />
+                  <path
+                    d="M116.9 96.6c-1.5-9-7.5-16.5-25.2-23.5l-8.7-4c-3.3-1.7-5.5-3-6.3-5.4-.5-1.7-.6-2.7-.6-4.3 0-1.7.6-3.4 1.7-4.7 2.8-3.2 7.5-4 11.1-2.7 2.3.8 4.4 2.7 5.6 5.7l12.5-7.8c-2.2-3.9-5.3-7-9-9.1-5-2.8-10.5-3.4-16.5-2.7-6 .7-11.2 3.4-15 8-4.8 5.7-6.1 12.5-5.3 20 .7 5.8 3.6 10.8 8 14.5 4.5 3.8 9 6.3 13.4 8.3 3.4 1.5 6.4 3.2 8.3 5.3 1.7 2 2.5 4.4 2.3 7-.3 3-1.7 5.3-4 7-2.3 1.5-5.3 2.2-8 2-5-.5-8.5-3-11.3-7.5L55.8 109c2.3 4.7 5.7 8.5 10.3 11.3 6 3.5 12.7 4.8 20 4 6.5-.7 12.2-3.3 16.5-8 3.6-3.8 5.8-8.5 6.3-14 .3-2.3.3-6.7-1-9.7zM72.5 53.5c-3-6.3-9.3-9.7-16.3-10-7-.3-12.5 2-17 7.2-4 4.8-6 10.7-6 17.7v38.3h15V68c0-3.7.7-7 2.8-9.8 2-2.8 5-4.4 8.5-4.2 3.8.2 6.5 2 8.5 5.3"
+                    fill="#323330" />
+                </svg>
+              </div>
+            </div>
+            <!-- Icon 3: React -->
+            <div class="orbit-icon" style="--angle: 180deg; --delay: -10s;">
+              <div class="orbit-icon-inner">
+                <svg viewBox="0 0 128 128" width="32" height="32">
+                  <path
+                    d="M64 0C28.7 0 0 28.7 0 64s28.7 64 64 64 64-28.7 64-64S99.3 0 64 0zm0 18c6.1 0 11.6 5.5 15.1 15.1-4.5 3.3-9.5 7.3-15.1 11.8-5.5-4.5-10.5-8.5-15.1-11.8C52.4 23.5 57.9 18 64 18zM36.5 44.3c5 3.7 10.5 8 16.7 13-6.2 5-11.7 9.4-16.7 13.1-3.8-4.3-6.5-9.6-6.5-13.1s2.7-8.8 6.5-13zm0 39.4c5 3.7 10.5 8 16.7 13-6.2 5-11.7 9.4-16.7 13.1C32.7 105.5 30 100.1 30 96.6s2.7-8.6 6.5-12.9zm55 0c3.8 4.3 6.5 9.6 6.5 12.9s-2.7 8.9-6.5 13.1c-5-3.7-10.5-8-16.7-13 6.2-5 11.7-9.4 16.7-13.1z"
+                    fill="#fff" />
+                </svg>
+              </div>
+            </div>
+            <!-- Icon 4: Python -->
+            <div class="orbit-icon" style="--angle: 270deg; --delay: -15s;">
+              <div class="orbit-icon-inner">
+                <svg viewBox="0 0 448 512" width="32" height="32" fill="#3776AB">
+                  <path
+                    d="M439.8 200.5c-7.7-30.9-22.3-54.2-53.4-54.2h-40.1v47.4c0 36.8-31.2 67.8-68.8 67.8H172.7c-29.2 0-53.4 25-53.4 54.3v101.7c0 29 25.2 46 53.4 54.3 33.8 9.9 66.3 11.7 106.8 0 26.9-7.8 53.4-23.5 53.4-54.3v-40.7H226.2c-36.8 0-67.8-31.2-67.8-67.9V301.2c0-29 22.2-54.3 53.4-54.3h146.2c35.7 0 67.8-31.3 67.8-67.9v-31.2c0 .1 0-.1 14-.1c29-3.3 54.2-14.7 54.2-54.2zm-284-54.2c-35.8 0-67.8 31.2-67.8 67.8v31.2h40.1v-47.4c0-36.8 31.2-67.9 68.8-67.9h104.9c29.2 0 53.4-25 53.4-54.3v-86.7c0-29-25.2-46-53.4-54.3C268-42.1 235.5-43.9 195-32.2c-26.9 7.8-53.4 23.5-53.4 54.3v40.7h106.7c36.8 0 67.8 31.2 67.8 67.9v35.8c0 29-22.2 54.3-53.4 54.3H155.8zm-22.3-88.1c-12 0-21.7-9.7-21.7-21.7s9.7-21.7 21.7-21.7 21.7 9.7 21.7 21.7-9.7 21.7-21.7 21.7zm180.8 314c12 0 21.7 9.7 21.7 21.7s-9.7 21.7-21.7 21.7-21.7-9.7-21.7-21.7 9.7-21.7 21.7-21.7z" />
+                </svg>
+              </div>
+            </div>
+          </div>
+
+          <!-- Orbit Ring 2 (Outer) -->
+          <div class="orbit-ring orbit-ring-2">
+            <!-- Icon 1: AWS -->
+            <div class="orbit-icon" style="--angle: 0deg; --delay: 0s;">
+              <div class="orbit-icon-inner">
+                <svg viewBox="0 0 128 128" width="30" height="30">
+                  <path fill="#252F3E" d="M0 0h128v128H0z" />
+                  <path
+                    d="M44.8 80.5c0 2.1.2 3.8.7 5.1.5 1.3 1.2 2.7 2.1 4.2.3.5.4 1 .4 1.5 0 .6-.4 1.3-1.2 1.9l-3.9 2.6c-.6.4-1.1.6-1.6.6-.6 0-1.3-.3-1.9-.9-1-.9-1.8-2-2.4-3.1-.7-1.1-1.3-2.4-2-3.9-5.1 6-11.5 9-19.2 9-5.5 0-9.8-1.6-13.1-4.7-3.2-3.1-4.9-7.3-4.9-12.4 0-5.5 1.9-10 5.8-13.4 3.9-3.4 9.1-5.1 15.6-5.1 2.2 0 4.4.2 6.8.5s4.8.8 7.4 1.4V58c0-4.9-1-8.4-3.1-10.4-2.1-2.1-5.6-3.1-10.6-3.1-2.3 0-4.6.3-7 .9-2.4.6-4.8 1.4-7 2.4-.8.4-1.5.6-2 .7-.4.1-.8.2-1.1.2-1 0-1.5-.7-1.5-2.2v-3c0-1.1.1-2 .4-2.5s.8-1 1.7-1.5c2.3-1.2 5-2.1 8.2-2.9 3.2-.8 6.6-1.2 10.2-1.2 7.8 0 13.5 1.8 17.1 5.3 3.6 3.5 5.4 8.9 5.4 16.1V80.5zm-26.5 9.9c2.1 0 4.3-.4 6.6-1.2 2.3-.8 4.3-2.2 6-4.1 1-1.2 1.8-2.6 2.2-4.1.4-1.6.7-3.5.7-5.7v-2.7c-1.9-.5-3.9-.9-6-1.2-2.1-.3-4.2-.4-6.2-.4-4.3 0-7.4.8-9.5 2.5-2.1 1.7-3.1 4.1-3.1 7.2 0 2.9.7 5.1 2.3 6.5 1.4 1.5 3.6 2.2 6.3 2.2h.7zm52.4 7.1c-1.3 0-2.1-.2-2.6-.7-.5-.5-1-1.5-1.4-2.8L50.7 40.7c-.4-1.4-.7-2.3-.7-2.7 0-1.1.5-1.7 1.6-1.7h6.1c1.3 0 2.2.2 2.7.7.5.5.9 1.5 1.3 2.8l11.8 46.5 11-46.5c.4-1.4.8-2.3 1.3-2.8.5-.5 1.4-.7 2.7-.7h5c1.3 0 2.2.2 2.7.7.5.5.9 1.5 1.3 2.8l11.1 47.1L121 40.7c.4-1.4.9-2.3 1.3-2.8.5-.5 1.4-.7 2.7-.7h5.8c1.1 0 1.7.5 1.7 1.7 0 .3-.1.7-.1 1.1-.1.4-.2 1-.4 1.7L116 94c-.4 1.4-.9 2.3-1.4 2.8-.5.5-1.3.7-2.6.7h-5.4c-1.3 0-2.2-.2-2.7-.7-.5-.5-.9-1.5-1.3-2.9l-10.9-45.3-10.8 45.3c-.4 1.4-.8 2.4-1.3 2.9-.5.5-1.4.7-2.7.7h-5.4z"
+                    fill="#F90" />
+                </svg>
+              </div>
+            </div>
+            <!-- Icon 2: Vercel -->
+            <div class="orbit-icon" style="--angle: 60deg; --delay: -5s;">
+              <div class="orbit-icon-inner">
+                <svg viewBox="0 0 128 128" width="30" height="30">
+                  <path fill="#000" d="M64 0L0 110h36.3L64 55l27.7 55H128z" />
+                  <path fill="#fff" d="M64 37l-18 36h36z" />
+                </svg>
+              </div>
+            </div>
+            <!-- Icon 3: HTML5 -->
+            <div class="orbit-icon" style="--angle: 120deg; --delay: -10s;">
+              <div class="orbit-icon-inner">
+                <svg viewBox="0 0 128 128" width="30" height="30">
+                  <path fill="#E44D26" d="M19.6 114l-6-67.4h100.8l-6 67.4L64 128z" />
+                  <path fill="#F16529" d="M64 118.4l29.4-8.1 5.1-57.3H64z" />
+                  <path fill="#EBEBEB"
+                    d="M64 66.7H49.8l-1-11.2H64V44.5H36.1l.3 3.4 2.8 31.3H64zm0 29.5l-.1 0-11.9-3.2-.8-8.6h-11l1.5 16.8 22.2 6.2.1 0z" />
+                  <path fill="#fff"
+                    d="M63.9 66.7v11h13l-1.2 13.5-11.8 3.2v11.4l22.2-6.2.2-1.6 2.5-28.4.3-2.9H63.9zm0-22.2v11h27.4l.2-2.5.5-5.1.3-3.4z" />
+                </svg>
+              </div>
+            </div>
+            <!-- Icon 4: Git -->
+            <div class="orbit-icon" style="--angle: 180deg; --delay: -15s;">
+              <div class="orbit-icon-inner">
+                <svg viewBox="0 0 128 128" width="30" height="30">
+                  <path fill="#F05032"
+                    d="M124.7 58.4L69.6 3.3c-3.1-3.1-8.2-3.1-11.4 0L47.6 13.9l14.4 14.4c3.3-1.1 7.2-.4 9.9 2.2 2.7 2.7 3.4 6.6 2.2 9.9l13.9 13.9c3.3-1.1 7.2-.4 9.9 2.2 3.8 3.8 3.8 10 0 13.8-3.8 3.8-10 3.8-13.8 0-2.9-2.9-3.5-7.1-1.9-10.6l-13-13v34.2c.9.4 1.7 1 2.4 1.7 3.8 3.8 3.8 10 0 13.8-3.8 3.8-10 3.8-13.8 0-3.8-3.8-3.8-10 0-13.8.9-.9 1.9-1.5 3-2V54.1c-1.1-.5-2.1-1.1-3-2-2.9-2.9-3.5-7.2-1.8-10.7L41.5 27.2 3.3 65.4c-3.1 3.1-3.1 8.2 0 11.4l55.1 55.1c3.1 3.1 8.2 3.1 11.4 0l54.9-55.1c3.1-3.1 3.1-8.2 0-11.4z" />
+                </svg>
+              </div>
+            </div>
+            <!-- Icon 5: SQL -->
+            <div class="orbit-icon" style="--angle: 240deg; --delay: -20s;">
+              <div class="orbit-icon-inner">
+                <svg viewBox="0 0 448 512" width="30" height="30" fill="#00758F">
+                  <path
+                    d="M448 111.8c0 56.5-100.3 102.2-224 102.2S0 168.3 0 111.8 100.3 9.6 224 9.6s224 45.7 224 102.2zm0 128c0 56.5-100.3 102.2-224 102.2S0 296.3 0 239.8V192h448v47.8zm0 128c0 56.5-100.3 102.2-224 102.2S0 424.3 0 367.8V320h448v47.8z" />
+                </svg>
+              </div>
+            </div>
+            <!-- Icon 6: CSS3 -->
+            <div class="orbit-icon" style="--angle: 300deg; --delay: -25s;">
+              <div class="orbit-icon-inner">
+                <svg viewBox="0 0 128 128" width="30" height="30">
+                  <path fill="#0277BD"
+                    d="M64.1 102.3c-14.2 0-23.5-6.2-28.3-18.6l12.6-5.3c3.3 7 7.6 10.5 15.9 10.5 6.7 0 11-3.3 11-8.2 0-2.5-1-4.5-3.1-6-2.1-1.5-7.3-3.5-12-5.5-4.2-1.8-7.6-3.4-10.3-5.5-5.5-4.2-8.3-9.5-8.3-16 0-6.6 2.5-12 7.3-16.1 4.8-4 10.8-6.1 18.1-6.1 11.5 0 20.1 5 25.2 14.9l-12.2 5.7c-3.2-5.7-7.5-8.5-12.8-8.5-5.7 0-9.5 3-9.5 7.3 0 4.7 4.5 7.4 13.5 11.3 5.2 2.2 9.3 4 12.3 5.7 8 4.5 12 10.5 12 18.2 0 7.1-2.7 12.8-8.1 17.1-5.4 4.2-12.5 6.3-20.3 6.3z" />
+                  <path fill="#0277BD"
+                    d="M96 113.5c-2 0-3.8-.7-5.3-2.1-1.5-1.4-2.3-3.2-2.3-5.3s.8-3.9 2.3-5.3c1.5-1.4 3.3-2.1 5.3-2.1s3.8.7 5.3 2.1c1.5 1.4 2.3 3.2 2.3 5.3s-.8 3.9-2.3 5.3c-1.5 1.4-3.3 2.1-5.3 2.1z" />
+                </svg>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
     </div>
     <div class="hero-scroll">
       <span>Scroll</span>
@@ -788,13 +911,13 @@
         <div class="cert-card reveal">
           <div class="cert-slider"
             style="position: relative; overflow: hidden; aspect-ratio: 16/9; border-bottom: 1px solid var(--border-glass);">
-            <div class="cert-slides" style="display: flex; width: 200%; height: 100%; transition: transform 0.5s ease;">
-              <img class="cert-image" src="Components\Images\founders_hackathon_1.png"
+            <div class="cert-slides" style="display: flex; width: 300%; height: 100%; transition: transform 0.5s ease;">
+              <img class="cert-image" src="Components\Images\Abhiram C Divakaran_Certificate.jpg"
                 alt="Founders Hackathon - Achievement Certificate"
-                style="border-bottom: none; aspect-ratio: 16/9; object-fit: cover; width: 50%;">
-              <img class="cert-image" src="Components\Images\founders_hackathon_2.png"
+                style="border-bottom: none; aspect-ratio: 16/9; object-fit: cover; width: 33.333%;">
+              <img class="cert-image" src="Components\Images\ChatGPT Image Aug 23, 2026, 11_20_39 PM.png"
                 alt="Founders Hackathon - Certificate of Appreciation"
-                style="border-bottom: none; aspect-ratio: 16/9; object-fit: cover; width: 50%;">
+                style="border-bottom: none; aspect-ratio: 16/9; object-fit: cover; width: 33.333%;">
             </div>
             <button class="cert-slider-btn prev" aria-label="Previous Certificate"
               style="position: absolute; left: 10px; top: 50%; transform: translateY(-50%); background: rgba(10, 10, 15, 0.7); border: 1px solid var(--border-glass); color: white; width: 32px; height: 32px; border-radius: 50%; display: flex; align-items: center; justify-content: center; cursor: pointer; backdrop-filter: blur(5px); z-index: 10; font-size: 1.2rem; font-weight: bold; transition: all 0.3s;">‹</button>
@@ -847,6 +970,16 @@
             <h4 class="cert-title">Data Science</h4>
             <p class="cert-issuer">Skill Winner</p>
             <p class="cert-date">Issued: June 2024</p>
+          </div>
+        </div>
+
+        <div class="cert-card reveal">
+          <img class="cert-image" src="Components\Images\Screenshot 2026-08-19 232050.png"
+            alt="LPU Certificate of Merit - Data Analysis and Visualization">
+          <div class="cert-body">
+            <h4 class="cert-title">Data Analysis &amp; Visualization</h4>
+            <p class="cert-issuer">Centre for Professional Enhancement, LPU</p>
+            <p class="cert-date">Issued: August 2026</p>
           </div>
         </div>
       </div>
