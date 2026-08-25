@@ -366,7 +366,7 @@ function initResumeModal() {
 function downloadResume() {
   // Generate resume content as a text blob and trigger download
   const resumeContent = document.querySelector('.resume-preview');
-  
+
   // Create a styled HTML version for download
   const htmlContent = `
 <!DOCTYPE html>
@@ -404,11 +404,28 @@ function downloadResume() {
 }
 
 /* ============================================
-   CONTACT FORM
+   CONTACT FORM  — powered by EmailJS
+   ─────────────────────────────────────────────
+   SETUP (one-time, ~5 minutes):
+   1. Go to https://www.emailjs.com/ → sign up free
+   2. Add Email Service (Gmail) → copy the Service ID
+   3. Create an Email Template → copy the Template ID
+      Template variables to use: {{from_name}}, {{from_email}}, {{role}}, {{message}}
+   4. Go to Account → API Keys → copy your Public Key
+   5. Paste the three values into the constants below
    ============================================ */
+const EMAILJS_SERVICE_ID = 'service_csmq6ou';   // e.g. 'service_abc123'
+const EMAILJS_TEMPLATE_ID = 'template_bp9we9b';  // e.g. 'template_xyz789'
+const EMAILJS_PUBLIC_KEY = 'qhb0V6cSJwljoB6pn';   // e.g. 'AbCdEfGhIjKlMnOp'
+
 function initContactForm() {
   const form = document.getElementById('contact-form');
   if (!form) return;
+
+  // Initialise EmailJS with your public key
+  if (typeof emailjs !== 'undefined') {
+    emailjs.init({ publicKey: EMAILJS_PUBLIC_KEY });
+  }
 
   const roleSelect = document.getElementById('contact-role');
   const messageInput = document.getElementById('contact-message');
@@ -419,14 +436,14 @@ function initContactForm() {
       if (val === 'recruiter') {
         messageInput.placeholder = 'Tell me about the role, project, or opportunity...';
       } else if (val === 'student') {
-        messageInput.placeholder = 'Tell me what you\'re working on or what you\'d like to chat about...';
+        messageInput.placeholder = "Tell me what you're working on or what you'd like to chat about...";
       } else {
         messageInput.placeholder = 'Message';
       }
     });
   }
 
-  form.addEventListener('submit', (e) => {
+  form.addEventListener('submit', async (e) => {
     e.preventDefault();
 
     const role = document.getElementById('contact-role').value;
@@ -434,23 +451,58 @@ function initContactForm() {
     const email = document.getElementById('contact-email').value;
     const message = document.getElementById('contact-message').value;
 
-    const subject = encodeURIComponent(`Portfolio Message from ${name} (${role})`);
-    const body = encodeURIComponent(`Name: ${name}\nEmail: ${email}\nRole: ${role}\n\nMessage:\n${message}`);
-
-    window.location.href = `mailto:abhiramcd27@gmail.com?subject=${subject}&body=${body}`;
-
     const submitBtn = form.querySelector('.submit-btn-v2') || form.querySelector('button[type="submit"]');
     const originalText = submitBtn.textContent;
-    submitBtn.textContent = '✓ Opening Email client...';
-    submitBtn.style.background = '#22c55e';
-    submitBtn.style.color = '#ffffff';
 
-    setTimeout(() => {
-      submitBtn.textContent = originalText;
-      submitBtn.style.background = '';
-      submitBtn.style.color = '';
+    // Guard: alert if credentials haven't been filled in yet
+    if (
+      EMAILJS_SERVICE_ID === 'YOUR_SERVICE_ID' ||
+      EMAILJS_TEMPLATE_ID === 'YOUR_TEMPLATE_ID' ||
+      EMAILJS_PUBLIC_KEY === 'YOUR_PUBLIC_KEY'
+    ) {
+      alert('⚠️ EmailJS is not configured yet.\nPlease add your Service ID, Template ID, and Public Key to script.js.');
+      return;
+    }
+
+    // Show sending state
+    submitBtn.textContent = '⏳ Sending...';
+    submitBtn.disabled = true;
+
+    try {
+      await emailjs.send(EMAILJS_SERVICE_ID, EMAILJS_TEMPLATE_ID, {
+        from_name: name,
+        from_email: email,
+        role: role,
+        message: message,
+        to_name: 'Abhiram',
+      });
+
+      // Success
+      submitBtn.textContent = '✅ Message sent!';
+      submitBtn.style.background = '#22c55e';
+      submitBtn.style.color = '#ffffff';
       form.reset();
-    }, 3000);
+
+      setTimeout(() => {
+        submitBtn.textContent = originalText;
+        submitBtn.style.background = '';
+        submitBtn.style.color = '';
+        submitBtn.disabled = false;
+      }, 4000);
+
+    } catch (error) {
+      console.error('EmailJS error:', error);
+      submitBtn.textContent = '❌ Failed to send. Try again.';
+      submitBtn.style.background = '#ef4444';
+      submitBtn.style.color = '#ffffff';
+
+      setTimeout(() => {
+        submitBtn.textContent = originalText;
+        submitBtn.style.background = '';
+        submitBtn.style.color = '';
+        submitBtn.disabled = false;
+      }, 4000);
+    }
   });
 }
 
@@ -599,7 +651,7 @@ function initBackToTop() {
   const backToTopBtn = document.getElementById('back-to-top');
   const progressCircleFill = document.querySelector('.progress-circle-fill');
   if (!backToTopBtn) return;
-  
+
   const r = 20;
   const circumference = 2 * Math.PI * r;
 
