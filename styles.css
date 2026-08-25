@@ -1241,73 +1241,236 @@ ul {
   gap: 2rem;
 }
 
-.edu-card {
+/* ============================================
+   EDUCATION TIMELINE (new design)
+   ============================================ */
+.edu-timeline {
+  position: relative;
+  display: flex;
+  flex-direction: column;
+  gap: 2rem;
+  padding-left: 2.5rem;
+}
+
+.edu-timeline::before {
+  content: '';
+  position: absolute;
+  left: 0.45rem;
+  top: 0.6rem;
+  bottom: 0.6rem;
+  width: 2px;
+  background: linear-gradient(to bottom, #6366f1, #8b5cf6, rgba(99,102,241,0.1));
+}
+
+.edu-timeline-item {
+  position: relative;
+}
+
+.edu-timeline-dot {
+  position: absolute;
+  left: -2.15rem;
+  top: 1.8rem;
+  width: 14px;
+  height: 14px;
+  border-radius: 50%;
+  border: 2px solid #0a0a0f;
+  z-index: 1;
+}
+
+.edu-dot-pursuing  { background: #f59e0b; box-shadow: 0 0 8px rgba(245,158,11,0.5); }
+.edu-dot-completed { background: #22c55e; box-shadow: 0 0 8px rgba(34,197,94,0.5); }
+
+/* Card */
+.edu-new-card {
   background: var(--bg-card);
   border: 1px solid var(--border-glass);
   border-radius: var(--radius-lg);
   overflow: hidden;
   transition: var(--transition-smooth);
   backdrop-filter: blur(10px);
+  padding: 1.6rem 1.75rem 0;
 }
 
-.edu-card:hover {
-  border-color: rgba(99, 102, 241, 0.2);
+.edu-new-card:hover {
+  border-color: rgba(99,102,241,0.35);
   transform: translateY(-3px);
+  box-shadow: 0 12px 40px rgba(99,102,241,0.12);
 }
 
-.edu-main {
-  display: grid;
-  grid-template-columns: auto 1fr;
-  gap: 1.75rem;
-  padding: 2rem;
-  align-items: center;
+/* Status badge */
+.edu-status-badge {
+  display: inline-block;
+  font-size: 0.72rem;
+  font-weight: 600;
+  padding: 0.2rem 0.75rem;
+  border-radius: 999px;
+  margin-bottom: 1.1rem;
+  letter-spacing: 0.04em;
 }
 
-.edu-icon-wrap {
-  width: 64px;
-  height: 64px;
-  border-radius: var(--radius-md);
-  background: var(--gradient-card);
+.edu-status-pursuing  { background: rgba(245,158,11,0.15); color: #f59e0b; border: 1px solid rgba(245,158,11,0.3); }
+.edu-status-completed { background: rgba(34,197,94,0.12);  color: #22c55e; border: 1px solid rgba(34,197,94,0.3); }
+
+/* Top row: logo + info + illustration */
+.edu-new-top {
+  display: flex;
+  align-items: flex-start;
+  justify-content: space-between;
+  gap: 1rem;
+  margin-bottom: 1.4rem;
+}
+
+.edu-new-left {
+  display: flex;
+  gap: 1.25rem;
+  align-items: flex-start;
+  flex: 1;
+}
+
+.edu-logo-wrap {
+  width: 60px;
+  height: 60px;
+  min-width: 60px;
+  border-radius: 10px;
+  background: #ffffff;
   border: 1px solid var(--border-glass);
+  overflow: hidden;
+  padding: 4px;
+}
+
+.edu-logo-wrap img {
+  width: 100%;
+  height: 100%;
+  object-fit: contain;
+}
+
+.edu-new-info { flex: 1; }
+
+.edu-new-degree {
+  font-family: var(--font-display);
+  font-size: 1.25rem;
+  font-weight: 700;
+  color: var(--text-primary);
+  margin-bottom: 0.35rem;
+  line-height: 1.3;
+}
+
+.edu-new-school {
+  display: inline-flex;
+  align-items: center;
+  gap: 0.3rem;
+  color: #818cf8;
+  font-size: 0.92rem;
+  font-weight: 500;
+  text-decoration: none;
+  margin-bottom: 0.6rem;
+  transition: color 0.2s;
+}
+
+.edu-new-school:hover { color: #a5b4fc; }
+
+.edu-new-meta {
   display: flex;
   align-items: center;
-  justify-content: center;
-  font-size: 1.75rem;
+  gap: 0.75rem;
+  flex-wrap: wrap;
+  margin-bottom: 0.8rem;
 }
 
-.edu-degree {
-  font-family: var(--font-display);
-  font-size: 1.15rem;
-  font-weight: 700;
-  margin-bottom: 0.25rem;
-}
-
-.edu-school {
-  color: var(--accent-2);
-  font-size: 0.95rem;
-  margin-bottom: 0.25rem;
-}
-
-.edu-period {
-  font-size: 0.8rem;
+.edu-meta-item {
+  display: inline-flex;
+  align-items: center;
+  gap: 0.3rem;
+  font-size: 0.82rem;
   color: var(--text-muted);
 }
 
-.edu-grade {
+.edu-meta-item svg { opacity: 0.7; }
+
+.edu-meta-divider {
+  color: var(--border-glass);
   font-size: 0.85rem;
+}
+
+.edu-new-desc {
+  font-size: 0.87rem;
   color: var(--text-secondary);
+  line-height: 1.65;
+}
+
+/* Illustration */
+.edu-new-illustration {
+  font-size: 4.5rem;
+  line-height: 1;
+  opacity: 0.85;
+  flex-shrink: 0;
+  filter: drop-shadow(0 0 16px rgba(99,102,241,0.25));
+  user-select: none;
+}
+
+/* Key Coursework */
+.edu-new-coursework {
+  border-top: 1px solid var(--border-glass);
+  padding: 1rem 0 0.9rem;
   margin-top: 0.4rem;
 }
 
-.edu-gallery {
-  display: none;
-  padding: 0 2rem 2rem;
+.edu-cw-label {
+  font-size: 0.78rem;
+  font-weight: 600;
+  color: var(--text-secondary);
+  margin-bottom: 0.6rem;
+  display: block;
 }
 
-.edu-gallery.expanded {
-  display: block;
-  animation: slideDown 0.4s ease-out;
+.edu-cw-tags {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 0.45rem;
 }
+
+.edu-tag {
+  font-size: 0.76rem;
+  padding: 0.22rem 0.7rem;
+  border-radius: 999px;
+  background: rgba(99,102,241,0.08);
+  border: 1px solid rgba(99,102,241,0.2);
+  color: var(--text-secondary);
+}
+
+/* Achievements row */
+.edu-new-achievements {
+  display: flex;
+  align-items: center;
+  gap: 0.75rem;
+  border-top: 1px solid var(--border-glass);
+  padding: 0.85rem 0 1rem;
+  flex-wrap: wrap;
+}
+
+.edu-ach-label {
+  display: inline-flex;
+  align-items: center;
+  gap: 0.35rem;
+  font-size: 0.8rem;
+  font-weight: 600;
+  color: var(--accent-2);
+  white-space: nowrap;
+}
+
+.edu-ach-divider {
+  color: var(--border-glass);
+  font-size: 0.9rem;
+}
+
+.edu-ach-text {
+  font-size: 0.82rem;
+  color: var(--text-secondary);
+}
+
+/* Legacy classes kept for safety */
+.edu-gallery { display: none; }
+.edu-gallery.expanded { display: block; animation: slideDown 0.4s ease-out; }
 
 /* ============================================
    NEW TWO-COLUMN CONTACT SECTION
