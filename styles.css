@@ -1282,7 +1282,6 @@ ul {
 
 /* Card */
 .edu-new-card {
-  position: relative;
   background: var(--bg-card);
   border: 1px solid var(--border-glass);
   border-radius: var(--radius-lg);
@@ -1298,21 +1297,29 @@ ul {
   box-shadow: 0 12px 40px rgba(99,102,241,0.12);
 }
 
-/* Status badge — absolute top-right */
+/* Status badge — sits inside .edu-new-right */
 .edu-status-badge {
-  position: absolute;
-  top: 1.2rem;
-  right: 1.2rem;
+  display: inline-block;
   font-size: 0.75rem;
   font-weight: 600;
   padding: 0.25rem 0.85rem;
   border-radius: 999px;
   letter-spacing: 0.03em;
-  z-index: 1;
+  white-space: nowrap;
+  align-self: flex-end;
 }
 
 .edu-status-pursuing  { background: rgba(245,158,11,0.15); color: #f59e0b; border: 1px solid rgba(245,158,11,0.3); }
 .edu-status-completed { background: rgba(34,197,94,0.12);  color: #22c55e; border: 1px solid rgba(34,197,94,0.3); }
+
+/* Right column: badge on top, illustration below */
+.edu-new-right {
+  display: flex;
+  flex-direction: column;
+  align-items: flex-end;
+  gap: 0.6rem;
+  flex-shrink: 0;
+}
 
 /* Top row: logo + info + illustration */
 .edu-new-top {
