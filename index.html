@@ -23,13 +23,8 @@
   <nav class="navbar" id="navbar">
     <div class="nav-container">
       <a href="#hero" class="nav-logo" style="display: flex; align-items: center; gap: 10px; text-decoration: none;">
-        <svg xmlns="http://www.w3.org/2000/svg" width="30" height="30" viewBox="0 0 24 24" fill="none" stroke="#3b82f6" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" style="filter: drop-shadow(0 0 8px rgba(59, 130, 246, 0.8));">
-          <path d="M12 5a3 3 0 1 0-5.997.125 4 4 0 0 0-2.526 5.77 4 4 0 0 0 .556 6.588A4 4 0 1 0 12 18Z"/>
-          <path d="M12 5a3 3 0 1 1 5.997.125 4 4 0 0 1 2.526 5.77 4 4 0 0 1-.556 6.588A4 4 0 1 1 12 18Z"/>
-          <path d="M15 13a4.5 4.5 0 0 1-3-4 4.5 4.5 0 0 1-3 4"/>
-          <path d="M17.599 6.5a3 3 0 0 0 .399-1.375"/>
-          <path d="M6.002 6.5A3 3 0 0 1 5.603 5.125"/>
-        </svg>
+        <img src="Components/Images/dev_logo.png" alt="Logo"
+          style="width: 40px; height: 40px; border-radius: 50%; object-fit: cover; filter: drop-shadow(0 0 8px rgba(59, 130, 246, 0.5));">
         <div style="font-family: var(--font-display); font-size: 1.5rem; font-weight: 700; letter-spacing: -0.5px;">
           <span style="color: #ffffff;">Abhiram's</span>
           <span style="color: #a855f7;">Portfolio</span>
@@ -300,7 +295,8 @@
           <div class="glass-card">
             <div class="timeline-date">Apr 2024 - June 2024</div>
             <div style="display: flex; align-items: center; gap: 16px; margin-bottom: 16px;">
-              <img src="Components/Images/skillwinner_logo.png" alt="Skill Winner Logo" style="width: 52px; height: 52px; border-radius: 8px; object-fit: contain; background: white; padding: 4px;">
+              <img src="Components/Images/skillwinner_logo.png" alt="Skill Winner Logo"
+                style="width: 52px; height: 52px; border-radius: 8px; object-fit: contain; background: white; padding: 4px;">
               <div>
                 <h3 class="timeline-role" style="margin-bottom: 4px;">Data Science Intern</h3>
                 <p class="timeline-company" style="margin-bottom: 0;">Skill Winner - Virtual Internship</p>
@@ -320,17 +316,20 @@
               <span class="tag">Scikit-learn</span>
             </div>
             <div class="internship-cert" style="margin-top: 16px;">
-              <a href="Components/Images/SkillWinner_Internship_Certificate.jpg" target="_blank"
+              <a href="Components\Images\DS Internship.jpg" target="_blank"
                 style="display: inline-flex; align-items: center; gap: 6px; padding: 6px 0; color: var(--text-muted); text-decoration: none; font-size: 0.8rem; font-weight: 500; letter-spacing: 0.04em; border-bottom: 1px solid transparent; transition: color 0.2s ease, border-color 0.2s ease;"
                 onmouseover="this.style.color='var(--accent-1)';this.style.borderBottomColor='var(--accent-1)';"
                 onmouseout="this.style.color='var(--text-muted)';this.style.borderBottomColor='transparent';">
-                <svg width="13" height="13" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+                <svg width="13" height="13" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"
+                  stroke-linecap="round" stroke-linejoin="round">
                   <path d="M14 2H6a2 2 0 0 0-2 2v16a2 2 0 0 0 2 2h12a2 2 0 0 0 2-2V8z"></path>
                   <polyline points="14 2 14 8 20 8"></polyline>
                 </svg>
                 View Certificate
-                <svg width="11" height="11" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5" stroke-linecap="round" stroke-linejoin="round">
-                  <line x1="5" y1="12" x2="19" y2="12"/><polyline points="12 5 19 12 12 19"/>
+                <svg width="11" height="11" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5"
+                  stroke-linecap="round" stroke-linejoin="round">
+                  <line x1="5" y1="12" x2="19" y2="12" />
+                  <polyline points="12 5 19 12 12 19" />
                 </svg>
               </a>
             </div>
@@ -408,7 +407,7 @@
           <div class="project-body">
             <div class="project-header">
               <h3 class="project-title">WyrmForge</h3>
-              <span class="project-date">2026 — Present</span>
+              <span class="project-date">August 2026</span>
             </div>
             <p class="project-desc">
               WyrmForge is an AI-powered application designed to refine and optimize your prompts for top-tier models
@@ -571,7 +570,7 @@
           <div class="project-body">
             <div class="project-header">
               <h3 class="project-title">CodeSight</h3>
-              <span class="project-date">2026</span>
+              <span class="project-date">Apr 2026 - Present</span>
             </div>
             <p class="project-desc">
               CodeSight is an AI-powered code review platform that analyzes source code and pull request diffs to
@@ -725,7 +724,7 @@
           <div class="project-body">
             <div class="project-header">
               <h3 class="project-title">PlugIn Wagon</h3>
-              <span class="project-date">2023 — 2024</span>
+              <span class="project-date">Nov 2023 — Feb 2024</span>
             </div>
             <p class="project-desc">
               Plugin Wagon is an EV utility application built with a Python/Django backend and a native Java Android
@@ -946,7 +945,18 @@
 
       <div class="certifications-grid">
 
-        <!-- 1. Data Analysis & Visualization — August 2026 (LATEST) -->
+        <!-- 1. Data Visualization with Python — November 2026 (LATEST) -->
+        <div class="cert-card reveal">
+          <img class="cert-image" src="Components/Images/IBM_Data_Visualization_Python.jpg"
+            alt="IBM Certificate - Data Visualization with Python (DV0101EN)">
+          <div class="cert-body">
+            <h4 class="cert-title">Data Visualization with Python</h4>
+            <p class="cert-issuer">IBM (DV0101EN), Lovely Professional University</p>
+            <p class="cert-date">Issued: November 2026</p>
+          </div>
+        </div>
+
+        <!-- 2. Data Analysis & Visualization — August 2026 -->
         <div class="cert-card reveal">
           <img class="cert-image" src="Components/Images/Screenshot 2026-08-19 232050.png"
             alt="LPU Certificate of Merit - Data Analysis and Visualization">
@@ -957,7 +967,7 @@
           </div>
         </div>
 
-        <!-- 2. Founders Hackathon — April 2026 -->
+        <!-- 3. Founders Hackathon — April 2026 -->
         <div class="cert-card reveal">
           <div class="cert-slider"
             style="position: relative; overflow: hidden; aspect-ratio: 16/9; border-bottom: 1px solid var(--border-glass);">
@@ -981,7 +991,7 @@
           </div>
         </div>
 
-        <!-- 3. Tech Blitz — September 2025 -->
+        <!-- 4. Tech Blitz — September 2025 -->
         <div class="cert-card reveal">
           <img class="cert-image" src="Components/Images/Hackathon-1(10590519603803).jpg"
             alt="Coding Ninjas Certificate">
@@ -992,7 +1002,7 @@
           </div>
         </div>
 
-        <!-- 4. Founder's Talk — September 2025 -->
+        <!-- 5. Founder's Talk — September 2025 -->
         <div class="cert-card reveal">
           <img class="cert-image"
             src="Components/Images/Founder's Talk Participation Certificate - undefined-1(10601973688515).jpg"
@@ -1004,7 +1014,7 @@
           </div>
         </div>
 
-        <!-- 5. Common Internship Test — June 2024 -->
+        <!-- 6. Common Internship Test — June 2024 -->
         <div class="cert-card reveal">
           <img class="cert-image"
             src="Components/Images/Abhiram C Divakaran - Participation Certificate-1(10611345867431).jpg"
@@ -1016,9 +1026,23 @@
           </div>
         </div>
 
-        <!-- 6. Data Science — June 2024 -->
+        <!-- 7. Data Science — June 2024 -->
         <div class="cert-card reveal">
-          <img class="cert-image" src="Components/Images/SkillWinner Course.jpg" alt="Data Science Certificate">
+          <div class="cert-slider"
+            style="position: relative; overflow: hidden; aspect-ratio: 16/9; border-bottom: 1px solid var(--border-glass);">
+            <div class="cert-slides" style="display: flex; width: 200%; height: 100%; transition: transform 0.5s ease;">
+              <img class="cert-image" src="Components/Images/SkillWinner Course.jpg"
+                alt="Data Science Course Certificate"
+                style="border-bottom: none; aspect-ratio: 16/9; object-fit: cover; width: 50%;">
+              <img class="cert-image" src="Components/Images/DS Internship.jpg"
+                alt="Data Science Internship Certificate"
+                style="border-bottom: none; aspect-ratio: 16/9; object-fit: cover; width: 50%;">
+            </div>
+            <button class="cert-slider-btn prev" aria-label="Previous Certificate"
+              style="position: absolute; left: 10px; top: 50%; transform: translateY(-50%); background: rgba(10, 10, 15, 0.7); border: 1px solid var(--border-glass); color: white; width: 32px; height: 32px; border-radius: 50%; display: flex; align-items: center; justify-content: center; cursor: pointer; backdrop-filter: blur(5px); z-index: 10; font-size: 1.2rem; font-weight: bold; transition: all 0.3s;">‹</button>
+            <button class="cert-slider-btn next" aria-label="Next Certificate"
+              style="position: absolute; right: 10px; top: 50%; transform: translateY(-50%); background: rgba(10, 10, 15, 0.7); border: 1px solid var(--border-glass); color: white; width: 32px; height: 32px; border-radius: 50%; display: flex; align-items: center; justify-content: center; cursor: pointer; backdrop-filter: blur(5px); z-index: 10; font-size: 1.2rem; font-weight: bold; transition: all 0.3s;">›</button>
+          </div>
           <div class="cert-body">
             <h4 class="cert-title">Data Science</h4>
             <p class="cert-issuer">Skill Winner</p>
@@ -1055,20 +1079,36 @@
                   <h3 class="edu-new-degree">Master of Computer Applications</h3>
                   <a href="https://www.lpu.in/" target="_blank" class="edu-new-school">
                     Lovely Professional University
-                    <svg width="12" height="12" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5"><path d="M18 13v6a2 2 0 0 1-2 2H5a2 2 0 0 1-2-2V8a2 2 0 0 1 2-2h6"/><polyline points="15 3 21 3 21 9"/><line x1="10" y1="14" x2="21" y2="3"/></svg>
+                    <svg width="12" height="12" viewBox="0 0 24 24" fill="none" stroke="currentColor"
+                      stroke-width="2.5">
+                      <path d="M18 13v6a2 2 0 0 1-2 2H5a2 2 0 0 1-2-2V8a2 2 0 0 1 2-2h6" />
+                      <polyline points="15 3 21 3 21 9" />
+                      <line x1="10" y1="14" x2="21" y2="3" />
+                    </svg>
                   </a>
                   <div class="edu-new-meta">
                     <span class="edu-meta-item">
-                      <svg width="13" height="13" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><rect x="3" y="4" width="18" height="18" rx="2" ry="2"/><line x1="16" y1="2" x2="16" y2="6"/><line x1="8" y1="2" x2="8" y2="6"/><line x1="3" y1="10" x2="21" y2="10"/></svg>
+                      <svg width="13" height="13" viewBox="0 0 24 24" fill="none" stroke="currentColor"
+                        stroke-width="2">
+                        <rect x="3" y="4" width="18" height="18" rx="2" ry="2" />
+                        <line x1="16" y1="2" x2="16" y2="6" />
+                        <line x1="8" y1="2" x2="8" y2="6" />
+                        <line x1="3" y1="10" x2="21" y2="10" />
+                      </svg>
                       2025 – Present
                     </span>
                     <span class="edu-meta-divider">|</span>
                     <span class="edu-meta-item">
-                      <svg width="13" height="13" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><polygon points="12 2 15.09 8.26 22 9.27 17 14.14 18.18 21.02 12 17.77 5.82 21.02 7 14.14 2 9.27 8.91 8.26 12 2"/></svg>
+                      <svg width="13" height="13" viewBox="0 0 24 24" fill="none" stroke="currentColor"
+                        stroke-width="2">
+                        <polygon
+                          points="12 2 15.09 8.26 22 9.27 17 14.14 18.18 21.02 12 17.77 5.82 21.02 7 14.14 2 9.27 8.91 8.26 12 2" />
+                      </svg>
                       CCPA: 7.52 / 10
                     </span>
                   </div>
-                  <p class="edu-new-desc">Advanced study of computer applications with focus on software development, data structures, algorithms, and modern technologies.</p>
+                  <p class="edu-new-desc">Advanced study of computer applications with focus on software development,
+                    data structures, algorithms, and modern technologies.</p>
                 </div>
               </div>
               <div class="edu-new-right">
@@ -1087,7 +1127,14 @@
             </div>
             <div class="edu-new-achievements">
               <span class="edu-ach-label">
-                <svg width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M6 9H4.5a2.5 2.5 0 0 1 0-5H6"/><path d="M18 9h1.5a2.5 2.5 0 0 0 0-5H18"/><path d="M4 22h16"/><path d="M10 14.66V17c0 .55-.47.98-.97 1.21C7.85 18.75 7 20.24 7 22"/><path d="M14 14.66V17c0 .55.47.98.97 1.21C16.15 18.75 17 20.24 17 22"/><path d="M18 2H6v7a6 6 0 0 0 12 0V2z"/></svg>
+                <svg width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+                  <path d="M6 9H4.5a2.5 2.5 0 0 1 0-5H6" />
+                  <path d="M18 9h1.5a2.5 2.5 0 0 0 0-5H18" />
+                  <path d="M4 22h16" />
+                  <path d="M10 14.66V17c0 .55-.47.98-.97 1.21C7.85 18.75 7 20.24 7 22" />
+                  <path d="M14 14.66V17c0 .55.47.98.97 1.21C16.15 18.75 17 20.24 17 22" />
+                  <path d="M18 2H6v7a6 6 0 0 0 12 0V2z" />
+                </svg>
                 Achievements
               </span>
               <span class="edu-ach-divider">|</span>
@@ -1109,20 +1156,36 @@
                   <h3 class="edu-new-degree">Bachelor of Computer Applications</h3>
                   <a href="https://www.itmcollege.edu.in/" target="_blank" class="edu-new-school">
                     ITM College of Arts &amp; Science
-                    <svg width="12" height="12" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5"><path d="M18 13v6a2 2 0 0 1-2 2H5a2 2 0 0 1-2-2V8a2 2 0 0 1 2-2h6"/><polyline points="15 3 21 3 21 9"/><line x1="10" y1="14" x2="21" y2="3"/></svg>
+                    <svg width="12" height="12" viewBox="0 0 24 24" fill="none" stroke="currentColor"
+                      stroke-width="2.5">
+                      <path d="M18 13v6a2 2 0 0 1-2 2H5a2 2 0 0 1-2-2V8a2 2 0 0 1 2-2h6" />
+                      <polyline points="15 3 21 3 21 9" />
+                      <line x1="10" y1="14" x2="21" y2="3" />
+                    </svg>
                   </a>
                   <div class="edu-new-meta">
                     <span class="edu-meta-item">
-                      <svg width="13" height="13" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><rect x="3" y="4" width="18" height="18" rx="2" ry="2"/><line x1="16" y1="2" x2="16" y2="6"/><line x1="8" y1="2" x2="8" y2="6"/><line x1="3" y1="10" x2="21" y2="10"/></svg>
+                      <svg width="13" height="13" viewBox="0 0 24 24" fill="none" stroke="currentColor"
+                        stroke-width="2">
+                        <rect x="3" y="4" width="18" height="18" rx="2" ry="2" />
+                        <line x1="16" y1="2" x2="16" y2="6" />
+                        <line x1="8" y1="2" x2="8" y2="6" />
+                        <line x1="3" y1="10" x2="21" y2="10" />
+                      </svg>
                       2021 – 2024
                     </span>
                     <span class="edu-meta-divider">|</span>
                     <span class="edu-meta-item">
-                      <svg width="13" height="13" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><polygon points="12 2 15.09 8.26 22 9.27 17 14.14 18.18 21.02 12 17.77 5.82 21.02 7 14.14 2 9.27 8.91 8.26 12 2"/></svg>
+                      <svg width="13" height="13" viewBox="0 0 24 24" fill="none" stroke="currentColor"
+                        stroke-width="2">
+                        <polygon
+                          points="12 2 15.09 8.26 22 9.27 17 14.14 18.18 21.02 12 17.77 5.82 21.02 7 14.14 2 9.27 8.91 8.26 12 2" />
+                      </svg>
                       Percentage: 87.28%
                     </span>
                   </div>
-                  <p class="edu-new-desc">Comprehensive study of computer science fundamentals, programming, and application development.</p>
+                  <p class="edu-new-desc">Comprehensive study of computer science fundamentals, programming, and
+                    application development.</p>
                 </div>
               </div>
               <div class="edu-new-right">
@@ -1141,7 +1204,14 @@
             </div>
             <div class="edu-new-achievements">
               <span class="edu-ach-label">
-                <svg width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M6 9H4.5a2.5 2.5 0 0 1 0-5H6"/><path d="M18 9h1.5a2.5 2.5 0 0 0 0-5H18"/><path d="M4 22h16"/><path d="M10 14.66V17c0 .55-.47.98-.97 1.21C7.85 18.75 7 20.24 7 22"/><path d="M14 14.66V17c0 .55.47.98.97 1.21C16.15 18.75 17 20.24 17 22"/><path d="M18 2H6v7a6 6 0 0 0 12 0V2z"/></svg>
+                <svg width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+                  <path d="M6 9H4.5a2.5 2.5 0 0 1 0-5H6" />
+                  <path d="M18 9h1.5a2.5 2.5 0 0 0 0-5H18" />
+                  <path d="M4 22h16" />
+                  <path d="M10 14.66V17c0 .55-.47.98-.97 1.21C7.85 18.75 7 20.24 7 22" />
+                  <path d="M14 14.66V17c0 .55.47.98.97 1.21C16.15 18.75 17 20.24 17 22" />
+                  <path d="M18 2H6v7a6 6 0 0 0 12 0V2z" />
+                </svg>
                 Achievements
               </span>
               <span class="edu-ach-divider">|</span>
@@ -1163,20 +1233,36 @@
                   <h3 class="edu-new-degree">Higher Secondary — Commerce Stream</h3>
                   <a href="#" class="edu-new-school">
                     Bharatiya Vidya Bhavan
-                    <svg width="12" height="12" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5"><path d="M18 13v6a2 2 0 0 1-2 2H5a2 2 0 0 1-2-2V8a2 2 0 0 1 2-2h6"/><polyline points="15 3 21 3 21 9"/><line x1="10" y1="14" x2="21" y2="3"/></svg>
+                    <svg width="12" height="12" viewBox="0 0 24 24" fill="none" stroke="currentColor"
+                      stroke-width="2.5">
+                      <path d="M18 13v6a2 2 0 0 1-2 2H5a2 2 0 0 1-2-2V8a2 2 0 0 1 2-2h6" />
+                      <polyline points="15 3 21 3 21 9" />
+                      <line x1="10" y1="14" x2="21" y2="3" />
+                    </svg>
                   </a>
                   <div class="edu-new-meta">
                     <span class="edu-meta-item">
-                      <svg width="13" height="13" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><rect x="3" y="4" width="18" height="18" rx="2" ry="2"/><line x1="16" y1="2" x2="16" y2="6"/><line x1="8" y1="2" x2="8" y2="6"/><line x1="3" y1="10" x2="21" y2="10"/></svg>
+                      <svg width="13" height="13" viewBox="0 0 24 24" fill="none" stroke="currentColor"
+                        stroke-width="2">
+                        <rect x="3" y="4" width="18" height="18" rx="2" ry="2" />
+                        <line x1="16" y1="2" x2="16" y2="6" />
+                        <line x1="8" y1="2" x2="8" y2="6" />
+                        <line x1="3" y1="10" x2="21" y2="10" />
+                      </svg>
                       2020 – 2021
                     </span>
                     <span class="edu-meta-divider">|</span>
                     <span class="edu-meta-item">
-                      <svg width="13" height="13" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><polygon points="12 2 15.09 8.26 22 9.27 17 14.14 18.18 21.02 12 17.77 5.82 21.02 7 14.14 2 9.27 8.91 8.26 12 2"/></svg>
+                      <svg width="13" height="13" viewBox="0 0 24 24" fill="none" stroke="currentColor"
+                        stroke-width="2">
+                        <polygon
+                          points="12 2 15.09 8.26 22 9.27 17 14.14 18.18 21.02 12 17.77 5.82 21.02 7 14.14 2 9.27 8.91 8.26 12 2" />
+                      </svg>
                       Percentage: 95.4%
                     </span>
                   </div>
-                  <p class="edu-new-desc">Commerce stream with focus on Accountancy, Business Studies, and Economics.</p>
+                  <p class="edu-new-desc">Commerce stream with focus on Accountancy, Business Studies, and Economics.
+                  </p>
                 </div>
               </div>
               <div class="edu-new-right">
@@ -1195,11 +1281,18 @@
             </div>
             <div class="edu-new-achievements">
               <span class="edu-ach-label">
-                <svg width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M6 9H4.5a2.5 2.5 0 0 1 0-5H6"/><path d="M18 9h1.5a2.5 2.5 0 0 0 0-5H18"/><path d="M4 22h16"/><path d="M10 14.66V17c0 .55-.47.98-.97 1.21C7.85 18.75 7 20.24 7 22"/><path d="M14 14.66V17c0 .55.47.98.97 1.21C16.15 18.75 17 20.24 17 22"/><path d="M18 2H6v7a6 6 0 0 0 12 0V2z"/></svg>
+                <svg width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+                  <path d="M6 9H4.5a2.5 2.5 0 0 1 0-5H6" />
+                  <path d="M18 9h1.5a2.5 2.5 0 0 0 0-5H18" />
+                  <path d="M4 22h16" />
+                  <path d="M10 14.66V17c0 .55-.47.98-.97 1.21C7.85 18.75 7 20.24 7 22" />
+                  <path d="M14 14.66V17c0 .55.47.98.97 1.21C16.15 18.75 17 20.24 17 22" />
+                  <path d="M18 2H6v7a6 6 0 0 0 12 0V2z" />
+                </svg>
                 Achievements
               </span>
               <span class="edu-ach-divider">|</span>
-              <span class="edu-ach-text">School Topper in Commerce &nbsp;•&nbsp; Distinction in all subjects</span>
+              <span class="edu-ach-text">Top 5% in class &nbsp;•&nbsp;</span>
             </div>
           </div>
         </div>
@@ -1217,20 +1310,36 @@
                   <h3 class="edu-new-degree">Secondary School — CBSE</h3>
                   <a href="#" class="edu-new-school">
                     Bharatiya Vidya Bhavan
-                    <svg width="12" height="12" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5"><path d="M18 13v6a2 2 0 0 1-2 2H5a2 2 0 0 1-2-2V8a2 2 0 0 1 2-2h6"/><polyline points="15 3 21 3 21 9"/><line x1="10" y1="14" x2="21" y2="3"/></svg>
+                    <svg width="12" height="12" viewBox="0 0 24 24" fill="none" stroke="currentColor"
+                      stroke-width="2.5">
+                      <path d="M18 13v6a2 2 0 0 1-2 2H5a2 2 0 0 1-2-2V8a2 2 0 0 1 2-2h6" />
+                      <polyline points="15 3 21 3 21 9" />
+                      <line x1="10" y1="14" x2="21" y2="3" />
+                    </svg>
                   </a>
                   <div class="edu-new-meta">
                     <span class="edu-meta-item">
-                      <svg width="13" height="13" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><rect x="3" y="4" width="18" height="18" rx="2" ry="2"/><line x1="16" y1="2" x2="16" y2="6"/><line x1="8" y1="2" x2="8" y2="6"/><line x1="3" y1="10" x2="21" y2="10"/></svg>
+                      <svg width="13" height="13" viewBox="0 0 24 24" fill="none" stroke="currentColor"
+                        stroke-width="2">
+                        <rect x="3" y="4" width="18" height="18" rx="2" ry="2" />
+                        <line x1="16" y1="2" x2="16" y2="6" />
+                        <line x1="8" y1="2" x2="8" y2="6" />
+                        <line x1="3" y1="10" x2="21" y2="10" />
+                      </svg>
                       2018 – 2019
                     </span>
                     <span class="edu-meta-divider">|</span>
                     <span class="edu-meta-item">
-                      <svg width="13" height="13" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><polygon points="12 2 15.09 8.26 22 9.27 17 14.14 18.18 21.02 12 17.77 5.82 21.02 7 14.14 2 9.27 8.91 8.26 12 2"/></svg>
+                      <svg width="13" height="13" viewBox="0 0 24 24" fill="none" stroke="currentColor"
+                        stroke-width="2">
+                        <polygon
+                          points="12 2 15.09 8.26 22 9.27 17 14.14 18.18 21.02 12 17.77 5.82 21.02 7 14.14 2 9.27 8.91 8.26 12 2" />
+                      </svg>
                       Percentage: 92.2%
                     </span>
                   </div>
-                  <p class="edu-new-desc">Strong foundation in Science, Mathematics, and Languages under CBSE curriculum.</p>
+                  <p class="edu-new-desc">Strong foundation in Science, Mathematics, and Languages under CBSE
+                    curriculum.</p>
                 </div>
               </div>
               <div class="edu-new-right">
@@ -1249,11 +1358,19 @@
             </div>
             <div class="edu-new-achievements">
               <span class="edu-ach-label">
-                <svg width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M6 9H4.5a2.5 2.5 0 0 1 0-5H6"/><path d="M18 9h1.5a2.5 2.5 0 0 0 0-5H18"/><path d="M4 22h16"/><path d="M10 14.66V17c0 .55-.47.98-.97 1.21C7.85 18.75 7 20.24 7 22"/><path d="M14 14.66V17c0 .55.47.98.97 1.21C16.15 18.75 17 20.24 17 22"/><path d="M18 2H6v7a6 6 0 0 0 12 0V2z"/></svg>
+                <svg width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+                  <path d="M6 9H4.5a2.5 2.5 0 0 1 0-5H6" />
+                  <path d="M18 9h1.5a2.5 2.5 0 0 0 0-5H18" />
+                  <path d="M4 22h16" />
+                  <path d="M10 14.66V17c0 .55-.47.98-.97 1.21C7.85 18.75 7 20.24 7 22" />
+                  <path d="M14 14.66V17c0 .55.47.98.97 1.21C16.15 18.75 17 20.24 17 22" />
+                  <path d="M18 2H6v7a6 6 0 0 0 12 0V2z" />
+                </svg>
                 Achievements
               </span>
               <span class="edu-ach-divider">|</span>
-              <span class="edu-ach-text">A1 Grade in Mathematics &nbsp;•&nbsp; Top 5% in school</span>
+              <span class="edu-ach-text">Won a national level Ramayana quiz competition &nbsp;•&nbsp; Excelled in sports
+                with silver and bronze medal each</span>
             </div>
           </div>
         </div>
@@ -1306,7 +1423,8 @@
             <a href="https://leetcode.com/u/Abhiram-C-Divakaran/" target="_blank" class="contact-social-btn"
               title="LeetCode" aria-label="LeetCode">
               <svg width="20" height="20" viewBox="0 0 24 24" fill="currentColor" xmlns="http://www.w3.org/2000/svg">
-                <path d="M13.483 0a1.374 1.374 0 0 0-.961.438L7.116 6.226l-3.854 4.126a5.266 5.266 0 0 0-1.209 2.104 5.35 5.35 0 0 0-.125.513 5.527 5.527 0 0 0 .062 2.362 5.83 5.83 0 0 0 .349 1.017 5.938 5.938 0 0 0 1.271 1.818l4.277 4.193.039.038c2.248 2.165 5.852 2.133 8.063-.074l2.396-2.392c.54-.54.54-1.414.003-1.955a1.378 1.378 0 0 0-1.951-.003l-2.396 2.392a3.021 3.021 0 0 1-4.205.038l-.02-.019-4.276-4.193c-.652-.64-.972-1.469-.948-2.263a2.68 2.68 0 0 1 .066-.523 2.545 2.545 0 0 1 .619-1.164L9.13 8.114c1.058-1.134 3.204-1.27 4.43-.278l3.501 2.831c.593.48 1.461.387 1.94-.207a1.384 1.384 0 0 0-.207-1.943l-3.5-2.831c-.8-.647-1.766-1.045-2.774-1.202l2.015-2.158A1.384 1.384 0 0 0 13.483 0zm-2.866 12.815a1.38 1.38 0 0 0-1.38 1.382 1.38 1.38 0 0 0 1.38 1.382H20.79a1.38 1.38 0 0 0 1.38-1.382 1.38 1.38 0 0 0-1.38-1.382z"/>
+                <path
+                  d="M13.483 0a1.374 1.374 0 0 0-.961.438L7.116 6.226l-3.854 4.126a5.266 5.266 0 0 0-1.209 2.104 5.35 5.35 0 0 0-.125.513 5.527 5.527 0 0 0 .062 2.362 5.83 5.83 0 0 0 .349 1.017 5.938 5.938 0 0 0 1.271 1.818l4.277 4.193.039.038c2.248 2.165 5.852 2.133 8.063-.074l2.396-2.392c.54-.54.54-1.414.003-1.955a1.378 1.378 0 0 0-1.951-.003l-2.396 2.392a3.021 3.021 0 0 1-4.205.038l-.02-.019-4.276-4.193c-.652-.64-.972-1.469-.948-2.263a2.68 2.68 0 0 1 .066-.523 2.545 2.545 0 0 1 .619-1.164L9.13 8.114c1.058-1.134 3.204-1.27 4.43-.278l3.501 2.831c.593.48 1.461.387 1.94-.207a1.384 1.384 0 0 0-.207-1.943l-3.5-2.831c-.8-.647-1.766-1.045-2.774-1.202l2.015-2.158A1.384 1.384 0 0 0 13.483 0zm-2.866 12.815a1.38 1.38 0 0 0-1.38 1.382 1.38 1.38 0 0 0 1.38 1.382H20.79a1.38 1.38 0 0 0 1.38-1.382 1.38 1.38 0 0 0-1.38-1.382z" />
               </svg>
             </a>
           </div>
