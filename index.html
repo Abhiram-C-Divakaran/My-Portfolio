@@ -8,8 +8,7 @@
     content="Student Portfolio — A showcase of projects, skills, internships, and achievements. Built with modern web technologies and 3D interactive design.">
   <title>Student Portfolio — Developer & Tech Enthusiast</title>
   <link rel="stylesheet" href="styles.css">
-  <link rel="icon"
-    href="data:image/svg+xml,<svg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 100 100'><text y='.9em' font-size='90'>⚡</text></svg>">
+  <link rel="icon" type="image/png" href="Components/Images/dev_logo.png">
 </head>
 
 <body>
@@ -32,12 +31,9 @@
       </a>
       <div class="nav-links" id="nav-links">
         <a href="#about">About</a>
-        <a href="#internships">Internships</a>
+        <a href="#internships">Experience</a>
         <a href="#projects">Projects</a>
         <a href="#skills">Skills</a>
-        <a href="#achievements">Achievements</a>
-        <a href="#certifications">Certifications</a>
-        <a href="#education">Education</a>
         <a href="#contact">Contact</a>
       </div>
       <button class="nav-toggle" id="nav-toggle" aria-label="Toggle navigation">
@@ -57,7 +53,7 @@
       <div class="hero-text">
         <div class="hero-badge">
           <span class="badge-icon">⚡</span>
-          Aspiring Data Scientist & AI Enthusiast
+          Applied AI &amp; Full-Stack Engineer
         </div>
         <h1 class="hero-title">
           <span class="line">Building</span>
@@ -65,8 +61,8 @@
           <span class="line">with data.</span>
         </h1>
         <p class="hero-subtitle">
-          I'm a Data Scientist with a passion for Artificial Intelligence and Machine Learning. Check out my projects
-          and skills.
+          I build intelligent AI applications, LLM workflows, and data-driven systems using Python, FastAPI, React,
+          and Machine Learning.
         </p>
         <div class="hero-actions" style="display: flex; align-items: center; gap: 1rem;">
           <a href="#about" class="btn btn-learn-more">
@@ -77,7 +73,9 @@
               <polyline points="12 5 19 12 12 19" />
             </svg>
           </a>
-          <a href="#" class="btn-secondary" data-resume aria-label="View Resume" title="View Resume">
+          <!-- TODO: Add Resume.pdf to Components/ -->
+          <a href="Components/Resume.pdf" target="_blank" rel="noopener noreferrer" class="btn-secondary"
+            aria-label="View Resume" title="View Resume">
             <svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5"
               stroke-linecap="round" stroke-linejoin="round">
               <path d="M14 2H6a2 2 0 0 0-2 2v16a2 2 0 0 0 2 2h12a2 2 0 0 0 2-2V8z" />
@@ -240,7 +238,7 @@
       <div class="about-grid">
         <div class="about-photo-wrapper reveal-left">
           <div class="about-photo">
-            <img src="Components\Images\ChatGPT Image Jun 10, 2026, 11_14_18 AM.png" alt="Profile Photo"
+            <img src="Components/Images/ChatGPT Image Jun 10, 2026, 11_14_18 AM.png" alt="Profile Photo"
               id="about-photo-img">
           </div>
           <div class="about-photo-decoration"></div>
@@ -251,26 +249,27 @@
           <p>
             I'm a Computer Science student with a strong interest in data analytics, business intelligence, machine
             learning, predictive analytics and data-driven decision making. I enjoy transforming raw data into clear
-            insights through analysis, visualization, and statistical techniques.My experience includes working with
+            insights through analysis, visualization, and statistical techniques. My experience includes working with
             SQL, Python, Excel, Power BI, and machine learning frameworks to solve practical problems and improve
             decision-making processes.
+          </p>
           <p>
-            When I'm not coding, you'll find me exploring new tech, contributing to open-source projects,
-            participating in hackathons, or mentoring fellow students. I believe in continuous learning
-            and am always looking for opportunities to grow and make an impact.
+            I focus on engineering practical AI tools, persistent memory and RAG-style context pipelines, and
+            end-to-end data products—from FastAPI backends and LLM-assisted developer platforms to interactive machine
+            learning web applications.
           </p>
 
           <div class="about-stats">
             <div class="stat-item">
-              <div class="stat-number" data-count="5" data-suffix="+">0</div>
+              <div class="stat-number" data-count="5" data-suffix="+">5+</div>
               <div class="stat-label">Projects Built</div>
             </div>
             <div class="stat-item">
-              <div class="stat-number" data-count="1">0</div>
+              <div class="stat-number" data-count="1">1</div>
               <div class="stat-label">Internships</div>
             </div>
             <div class="stat-item">
-              <div class="stat-number" data-count="5" data-suffix="+">0</div>
+              <div class="stat-number" data-count="5" data-suffix="+">5+</div>
               <div class="stat-label">Certificates</div>
             </div>
           </div>
@@ -316,7 +315,7 @@
               <span class="tag">Scikit-learn</span>
             </div>
             <div class="internship-cert" style="margin-top: 16px;">
-              <a href="Components\Images\DS Internship.jpg" target="_blank"
+              <a href="Components/Images/DS Internship.jpg" target="_blank" rel="noopener noreferrer"
                 style="display: inline-flex; align-items: center; gap: 6px; padding: 6px 0; color: var(--text-muted); text-decoration: none; font-size: 0.8rem; font-weight: 500; letter-spacing: 0.04em; border-bottom: 1px solid transparent; transition: color 0.2s ease, border-color 0.2s ease;"
                 onmouseover="this.style.color='var(--accent-1)';this.style.borderBottomColor='var(--accent-1)';"
                 onmouseout="this.style.color='var(--text-muted)';this.style.borderBottomColor='transparent';">
@@ -398,7 +397,7 @@
         <!-- Project 1: WyrmForge (2026)-->
         <div class="project-card reveal" data-category="ai-ml full-stack">
           <div class="project-image-container">
-            <img class="project-image" src="Components\Images\Gemini_Generated_Image_61pz3v61pz3v61pz.png"
+            <img class="project-image" src="Components/Images/Gemini_Generated_Image_61pz3v61pz3v61pz.png"
               alt="WyrmForge Project">
             <div class="project-image-overlay">
               <div class="expand-icon">🔍</div>
@@ -428,31 +427,13 @@
                 Code</a>
             </div>
           </div>
-          <div class="project-gallery" id="proj-gallery-wrymforge">
-            <div class="gallery-grid">
-              <div class="gallery-thumb"><img
-                  src="https://images.unsplash.com/photo-1516321318423-f06f85e504b3?w=200&h=200&fit=crop"
-                  alt="Screenshot 1"></div>
-              <div class="gallery-thumb"><img
-                  src="https://images.unsplash.com/photo-1526374965328-7f61d4dc18c5?w=200&h=200&fit=crop"
-                  alt="Screenshot 2"></div>
-              <div class="gallery-thumb"><img
-                  src="https://images.unsplash.com/photo-1550751827-4bd374c3f58b?w=200&h=200&fit=crop"
-                  alt="Screenshot 3"></div>
-            </div>
-          </div>
-          <div style="padding: 0 1.75rem 1.75rem;">
-            <button class="expand-gallery-btn" data-target="proj-gallery-wrymforge">
-              <span class="btn-text">View Photos</span>
-              <span class="arrow">▼</span>
-            </button>
-          </div>
+          <!-- TODO: Add real WyrmForge screenshots gallery -->
         </div>
         <!-- Project 2: Alvio Academy (2026) -->
         <div class="project-card reveal" data-category="ai-ml full-stack">
           <div class="project-image-container">
             <img class="project-image"
-              src="Components\Images\How-to-Implement-A-Queue-in-Python_Watermarked.993460fe2ffc.webp"
+              src="Components/Images/How-to-Implement-A-Queue-in-Python_Watermarked.993460fe2ffc.webp"
               alt="Alvio Academy Project">
             <div class="project-image-overlay">
               <div class="expand-icon">🔍</div>
@@ -478,36 +459,17 @@
               <span class="tag">Generative AI</span>
             </div>
             <div class="project-links">
-              <a href="#" class="project-link primary">⬡ Live Demo</a>
               <a href="https://github.com/Abhiram-C-Divakaran/Alvio-Academy" class="project-link secondary">⌘ Source
                 Code</a>
             </div>
           </div>
-          <div class="project-gallery" id="proj-gallery-0">
-            <div class="gallery-grid">
-              <div class="gallery-thumb"><img
-                  src="https://images.unsplash.com/photo-1516321318423-f06f85e504b3?w=200&h=200&fit=crop"
-                  alt="Screenshot 1"></div>
-              <div class="gallery-thumb"><img
-                  src="https://images.unsplash.com/photo-1526374965328-7f61d4dc18c5?w=200&h=200&fit=crop"
-                  alt="Screenshot 2"></div>
-              <div class="gallery-thumb"><img
-                  src="https://images.unsplash.com/photo-1550751827-4bd374c3f58b?w=200&h=200&fit=crop"
-                  alt="Screenshot 3"></div>
-            </div>
-          </div>
-          <div style="padding: 0 1.75rem 1.75rem;">
-            <button class="expand-gallery-btn" data-target="proj-gallery-0">
-              <span class="btn-text">View Photos</span>
-              <span class="arrow">▼</span>
-            </button>
-          </div>
+          <!-- TODO: Add real Alvio Academy screenshots gallery -->
         </div>
 
         <!-- Project 3: AVA Chatbot (2026) -->
         <div class="project-card reveal" data-category="ai-ml full-stack">
           <div class="project-image-container">
-            <img class="project-image" src="Components\Images\8691987.jpg" alt="AI Dashboard Project">
+            <img class="project-image" src="Components/Images/8691987.jpg" alt="AVA Full-Stack AI Chatbot">
             <div class="project-image-overlay">
               <div class="expand-icon">🔍</div>
             </div>
@@ -518,7 +480,7 @@
               <span class="project-date">2026 — Present</span>
             </div>
             <p class="project-desc">
-              AVA is a full-stack personal AI chatbot assistant engineered with a secure authentication, session
+              AVA is a full-stack personal AI chatbot assistant engineered with secure authentication, session
               management, and conversational interface. Features a long-term memory system utilizing context window
               management, summary-based context retention, and custom tools including live web search, code execution,
               and a rule-based sentiment detector.
@@ -531,38 +493,16 @@
               <span class="tag">Machine Learning</span>
             </div>
             <div class="project-links">
-              <a href="#" class="project-link primary">⬡ Live Demo</a>
               <a href="https://github.com/Abhiram-C-Divakaran/Ava-AI" class="project-link secondary">⌘ Source Code</a>
             </div>
           </div>
-          <div class="project-gallery" id="proj-gallery-1">
-            <div class="gallery-grid">
-              <div class="gallery-thumb"><img
-                  src="https://images.unsplash.com/photo-1551288049-bebda4e38f71?w=200&h=200&fit=crop"
-                  alt="Screenshot 1"></div>
-              <div class="gallery-thumb"><img
-                  src="https://images.unsplash.com/photo-1460925895917-afdab827c52f?w=200&h=200&fit=crop"
-                  alt="Screenshot 2"></div>
-              <div class="gallery-thumb"><img
-                  src="https://images.unsplash.com/photo-1504868584819-f8e8b4b6d7e3?w=200&h=200&fit=crop"
-                  alt="Screenshot 3"></div>
-              <div class="gallery-thumb"><img
-                  src="https://images.unsplash.com/photo-1551288049-bebda4e38f71?w=200&h=200&fit=crop&crop=bottom"
-                  alt="Screenshot 4"></div>
-            </div>
-          </div>
-          <div style="padding: 0 1.75rem 1.75rem;">
-            <button class="expand-gallery-btn" data-target="proj-gallery-1">
-              <span class="btn-text">View Photos</span>
-              <span class="arrow">▼</span>
-            </button>
-          </div>
+          <!-- TODO: Add real AVA Chatbot screenshots gallery -->
         </div>
 
         <!-- Project 4: CodeSight (2026) -->
         <div class="project-card reveal" data-category="ai-ml">
           <div class="project-image-container">
-            <img class="project-image" src="Components\Images\I-LOVE-CODING-112023.jpg" alt="E-Commerce App">
+            <img class="project-image" src="Components/Images/I-LOVE-CODING-112023.jpg" alt="CodeSight AI Code Review Platform">
             <div class="project-image-overlay">
               <div class="expand-icon">🔍</div>
             </div>
@@ -585,36 +525,14 @@
               <span class="tag">Groq API</span>
               <span class="tag">Claude Sonnet</span>
             </div>
-            <div class="project-links">
-              <a href="#" class="project-link primary">⬡ Live Demo</a>
-              <a href="#" class="project-link secondary">⌘ Source Code</a>
-            </div>
           </div>
-          <div class="project-gallery" id="proj-gallery-2">
-            <div class="gallery-grid">
-              <div class="gallery-thumb"><img
-                  src="https://images.unsplash.com/photo-1563013544-824ae1b704d3?w=200&h=200&fit=crop"
-                  alt="Screenshot 1"></div>
-              <div class="gallery-thumb"><img
-                  src="https://images.unsplash.com/photo-1556742049-0cfed4f6a45d?w=200&h=200&fit=crop"
-                  alt="Screenshot 2"></div>
-              <div class="gallery-thumb"><img
-                  src="https://images.unsplash.com/photo-1472851294608-062f824d29cc?w=200&h=200&fit=crop"
-                  alt="Screenshot 3"></div>
-            </div>
-          </div>
-          <div style="padding: 0 1.75rem 1.75rem;">
-            <button class="expand-gallery-btn" data-target="proj-gallery-2">
-              <span class="btn-text">View Photos</span>
-              <span class="arrow">▼</span>
-            </button>
-          </div>
+          <!-- TODO: Add real CodeSight screenshots gallery -->
         </div>
 
         <!-- Project 5: Credit Card Fraud Detection (2024) -->
         <div class="project-card reveal" data-category="data-science">
           <div class="project-image-container">
-            <img class="project-image" src="Components\Images\digital-payment_23-2151961260.avif" alt="ML Model">
+            <img class="project-image" src="Components/Images/digital-payment_23-2151961260.avif" alt="ML Model">
             <div class="project-image-overlay">
               <div class="expand-icon">🔍</div>
             </div>
@@ -645,14 +563,14 @@
           </div>
           <div class="project-gallery" id="proj-gallery-3">
             <div class="gallery-grid">
-              <div class="gallery-thumb"><img src="Components\Images\Screenshot 2026-06-11 051919.png"
+              <div class="gallery-thumb"><img src="Components/Images/Screenshot 2026-06-11 051919.png"
                   alt="Screenshot 1"></div>
-              <div class="gallery-thumb"><img src="Components\Images\Screenshot 2026-06-11 051933.png"
+              <div class="gallery-thumb"><img src="Components/Images/Screenshot 2026-06-11 051933.png"
                   alt="Screenshot 2"></div>
-              <div class="gallery-thumb"><img src="Components\Images\Screenshot 2026-06-11 051951.png"
+              <div class="gallery-thumb"><img src="Components/Images/Screenshot 2026-06-11 051951.png"
                   alt="Screenshot 3"></div>
-              <div class="gallery-thumb"><img src="Components\Images\Screenshot 2026-06-11 052533.png"
-                  alt="Screenshot 3"></div>
+              <div class="gallery-thumb"><img src="Components/Images/Screenshot 2026-06-11 052533.png"
+                  alt="Screenshot 4"></div>
             </div>
           </div>
           <div style="padding: 0 1.75rem 1.75rem;">
@@ -695,14 +613,14 @@
           </div>
           <div class="project-gallery" id="proj-gallery-4">
             <div class="gallery-grid">
-              <div class="gallery-thumb"><img src="Components\Images\Screenshot 2026-06-10 211306.png"
+              <div class="gallery-thumb"><img src="Components/Images/Screenshot 2026-06-10 211306.png"
                   alt="Screenshot 1"></div>
-              <div class="gallery-thumb"><img src="Components\Images\Screenshot 2026-06-10 211344.png"
+              <div class="gallery-thumb"><img src="Components/Images/Screenshot 2026-06-10 211344.png"
                   alt="Screenshot 2"></div>
-              <div class="gallery-thumb"><img src="Components\Images\Screenshot 2026-06-10 211413.png"
+              <div class="gallery-thumb"><img src="Components/Images/Screenshot 2026-06-10 211413.png"
                   alt="Screenshot 3"></div>
-              <div class="gallery-thumb"><img src="Components\Images\Screenshot 2026-06-10 211435.png"
-                  alt="Screenshot 3"></div>
+              <div class="gallery-thumb"><img src="Components/Images/Screenshot 2026-06-10 211435.png"
+                  alt="Screenshot 4"></div>
             </div>
           </div>
           <div style="padding: 0 1.75rem 1.75rem;">
@@ -716,7 +634,7 @@
         <!-- Project 7: PlugIn Wagon (2023) -->
         <div class="project-card reveal" data-category="full-stack">
           <div class="project-image-container">
-            <img class="project-image" src="Components\Images\wp8000721.jpg" alt="Chat App">
+            <img class="project-image" src="Components/Images/wp8000721.jpg" alt="PlugIn Wagon EV Utility Application">
             <div class="project-image-overlay">
               <div class="expand-icon">🔍</div>
             </div>
@@ -739,27 +657,11 @@
               <span class="tag">Java</span>
             </div>
             <div class="project-links">
-              <a href="#" class="project-link primary">⬡ Live Demo</a>
               <a href="https://github.com/Abhiram-C-Divakaran/PlugIn-Wagon" class="project-link secondary">⌘ Source
                 Code</a>
             </div>
           </div>
-          <div class="project-gallery" id="proj-gallery-5">
-            <div class="gallery-grid">
-              <div class="gallery-thumb"><img
-                  src="https://images.unsplash.com/photo-1611532736597-de2d4265fba3?w=200&h=200&fit=crop"
-                  alt="Screenshot 1"></div>
-              <div class="gallery-thumb"><img
-                  src="https://images.unsplash.com/photo-1577563908411-5077b6dc7624?w=200&h=200&fit=crop"
-                  alt="Screenshot 2"></div>
-            </div>
-          </div>
-          <div style="padding: 0 1.75rem 1.75rem;">
-            <button class="expand-gallery-btn" data-target="proj-gallery-5">
-              <span class="btn-text">View Photos</span>
-              <span class="arrow">▼</span>
-            </button>
-          </div>
+          <!-- TODO: Add real PlugIn Wagon screenshots gallery -->
         </div>
       </div>
     </div>
@@ -1073,7 +975,7 @@
             <div class="edu-new-top">
               <div class="edu-new-left">
                 <div class="edu-logo-wrap">
-                  <img src="Components\Images\lpu_logo.png" alt="LPU Logo">
+                  <img src="Components/Images/lpu_logo.png" alt="LPU Logo">
                 </div>
                 <div class="edu-new-info">
                   <h3 class="edu-new-degree">Master of Computer Applications</h3>
@@ -1150,7 +1052,7 @@
             <div class="edu-new-top">
               <div class="edu-new-left">
                 <div class="edu-logo-wrap">
-                  <img src="Components\Images\itm_logo.jpg" alt="ITM College Logo">
+                  <img src="Components/Images/itm_logo.jpg" alt="ITM College Logo">
                 </div>
                 <div class="edu-new-info">
                   <h3 class="edu-new-degree">Bachelor of Computer Applications</h3>
@@ -1227,19 +1129,11 @@
             <div class="edu-new-top">
               <div class="edu-new-left">
                 <div class="edu-logo-wrap">
-                  <img src="Components\Images\bvb_logo.jpg" alt="BVB Logo">
+                  <img src="Components/Images/bvb_logo.jpg" alt="BVB Logo">
                 </div>
                 <div class="edu-new-info">
                   <h3 class="edu-new-degree">Higher Secondary — Commerce Stream</h3>
-                  <a href="#" class="edu-new-school">
-                    Bharatiya Vidya Bhavan
-                    <svg width="12" height="12" viewBox="0 0 24 24" fill="none" stroke="currentColor"
-                      stroke-width="2.5">
-                      <path d="M18 13v6a2 2 0 0 1-2 2H5a2 2 0 0 1-2-2V8a2 2 0 0 1 2-2h6" />
-                      <polyline points="15 3 21 3 21 9" />
-                      <line x1="10" y1="14" x2="21" y2="3" />
-                    </svg>
-                  </a>
+                  <span class="edu-new-school">Bharatiya Vidya Bhavan</span>
                   <div class="edu-new-meta">
                     <span class="edu-meta-item">
                       <svg width="13" height="13" viewBox="0 0 24 24" fill="none" stroke="currentColor"
@@ -1304,19 +1198,11 @@
             <div class="edu-new-top">
               <div class="edu-new-left">
                 <div class="edu-logo-wrap">
-                  <img src="Components\Images\bvb_logo.jpg" alt="BVB Logo">
+                  <img src="Components/Images/bvb_logo.jpg" alt="BVB Logo">
                 </div>
                 <div class="edu-new-info">
                   <h3 class="edu-new-degree">Secondary School — CBSE</h3>
-                  <a href="#" class="edu-new-school">
-                    Bharatiya Vidya Bhavan
-                    <svg width="12" height="12" viewBox="0 0 24 24" fill="none" stroke="currentColor"
-                      stroke-width="2.5">
-                      <path d="M18 13v6a2 2 0 0 1-2 2H5a2 2 0 0 1-2-2V8a2 2 0 0 1 2-2h6" />
-                      <polyline points="15 3 21 3 21 9" />
-                      <line x1="10" y1="14" x2="21" y2="3" />
-                    </svg>
-                  </a>
+                  <span class="edu-new-school">Bharatiya Vidya Bhavan</span>
                   <div class="edu-new-meta">
                     <span class="edu-meta-item">
                       <svg width="13" height="13" viewBox="0 0 24 24" fill="none" stroke="currentColor"
